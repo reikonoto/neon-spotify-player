@@ -1,0 +1,96 @@
+/* 全体の背景とレイアウト */
+body {
+  background-color: #0a0f1a;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 全体を中央寄せ */
+.wrap.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 外枠のカード */
+.card {
+  background: rgba(20, 20, 30, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+/* ネオン文字 */
+.neonText {
+  font-size: 1.8rem;
+  color: #00e0ff;
+  text-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff, 0 0 30px #00ffff;
+  animation: pulse 2s infinite;
+}
+
+/* 入力とボタン */
+.row {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.urlInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.applyBtn {
+  background-color: #0099ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.applyBtn:hover {
+  background-color: #00c3ff;
+}
+
+/* 注意書き */
+.note {
+  opacity: 0.7;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* エラーメッセージ */
+.error {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* プレイヤー */
+.playerWrap {
+  margin-top: 20px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(0, 240, 255, 1));
+  }
+}
